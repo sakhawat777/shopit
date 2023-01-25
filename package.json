@@ -4,15 +4,18 @@
   "description": "full e-ecommerce site using mern",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon backend/server.js"
+    "start": "nodemon backend/server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT & nodemon backend/server.js",
+    "prod": "SET NODE_ENV=PRODUCTION & nodemon backend/server.js"
   },
   "author": "Md. Sakhawat Hossain",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^6.8.4",
+    "mongoose": "^6.8.4"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.20"
   }
 }
